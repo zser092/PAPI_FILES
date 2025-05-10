@@ -202,19 +202,7 @@ Based on the papers, you should expect the following results:
 If you use this code in your research, please cite the original papers:
 
 ```
-@inproceedings{gaurav2025papi,
-  title={PaPI: Learning More, Wasting Less},
-  author={Gaurav, Suyash and Heikkonen, Jukka and Chaudhary, Jatin},
-  booktitle={Proceedings of the Conference},
-  year={2025}
-}
-
-@inproceedings{gaurav2025pathway,
-  title={PaPI: Pathway-based Progressive Inference for Energy-Efficient Continual Learning},
-  author={Gaurav, Suyash and Heikkonen, Jukka and Chaudhary, Jatin},
-  booktitle={39th Conference on Neural Information Processing Systems (NeurIPS 2025)},
-  year={2025}
-}
+This code accompanies our ongoing work on PaPI. Citations are provisional and will be finalized upon paper acceptance
 ```
 
 ## License
