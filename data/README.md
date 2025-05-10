@@ -94,3 +94,42 @@ In the PaPI framework, the tasks are learned sequentially in the following order
 3. MNLI (natural language inference)
 
 This order is maintained in the training script to replicate the experimental setup from the papers.
+
+## Data Directory Structure
+
+When running the experiments, the datasets will be automatically downloaded and cached by the HuggingFace datasets library. The default cache location is:
+
+- Linux: `~/.cache/huggingface/datasets`
+- Windows: `C:\Users\<username>\.cache\huggingface\datasets`
+- macOS: `~/Library/Caches/huggingface/datasets`
+
+You can override this location by setting the `HF_DATASETS_CACHE` environment variable:
+
+```bash
+# Linux/macOS
+export HF_DATASETS_CACHE="/path/to/custom/directory"
+
+# Windows
+set HF_DATASETS_CACHE=C:\path\to\custom\directory
+```
+
+## Manual Dataset Download (Optional)
+
+If you prefer to download the datasets manually or if you're working in an offline environment, you can download them from the following sources:
+
+### SST-2
+1. Visit the [GLUE benchmark website](https://gluebenchmark.com/tasks)
+2. Download the SST-2 dataset
+3. Extract the files to `data/sst2/`
+
+### Emotion
+1. Visit the [Emotion dataset on HuggingFace](https://huggingface.co/datasets/emotion)
+2. Download the dataset files
+3. Extract the files to `data/emotion/`
+
+### MNLI
+1. Visit the [GLUE benchmark website](https://gluebenchmark.com/tasks)
+2. Download the MNLI dataset
+3. Extract the files to `data/mnli/`
+
+To use these manually downloaded datasets, you'll need to modify the data loading functions in `code/train_papi.py` to load from local files instead of using the HuggingFace datasets library.
