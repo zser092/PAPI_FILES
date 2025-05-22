@@ -151,5 +151,5 @@ experiments = [
 ## References
 
 For more details on the experimental setup and methodology, refer to the original papers:
-- "PaPI: Learning More, Wasting Less"
+
 - "PaPI: Pathway-based Progressive Inference for Energy-Efficient Continual Learning"
