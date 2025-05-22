@@ -205,6 +205,4 @@ If you use this code in your research, please cite the original papers:
 This code accompanies our ongoing work on PaPI. Citations are provisional and will be finalized upon paper acceptance
 ```
 
-## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
